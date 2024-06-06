@@ -1,0 +1,27 @@
+body {
+    padding-top: 0px;
+  }
+  
+  footer {
+    position: static; /* Remove fixed position for better responsiveness */
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem; /* Add margin for spacing */
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand, .nav-link {
+      font-size: 0.9rem; /* Smaller font size on small screens */
+    }
+  
+    .card img {
+      height: 150px; /* Smaller image height on small screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; /* Max width for extra large screens */
+    }
+  }
+  

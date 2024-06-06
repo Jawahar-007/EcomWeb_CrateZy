@@ -1,0 +1,65 @@
+
+<main class="container float-sm mt-4">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-cratezy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  p-3 rounded-2" tabindex="0">
+  <div class="row align-items-center">
+      <div class="col-md-6 about-us-image">
+          <img src="../../../assets/images/CrateZy-about-us.png" alt="CrateZy - About Us Image">
+      </div>
+      <div class="col-md-6 about-us-text">
+          <h1>About CrateZy</h1>
+          <p>CrateZy is your one-stop shop for curated crates filled with exciting and unique treasures. We believe in sparking joy and igniting passions by delivering thoughtfully assembled collections right to your doorstep.</p>
+          <p>Our mission is to provide:</p>
+          <ul>
+              <li>High-quality products that bring delight and value.</li>
+              <li>A convenient and curated shopping experience.</li>
+              <li>A touch of surprise and discovery in every crate.</li>
+          </ul>
+      </div>
+  </div>
+
+  
+  <section class="team mt-4" >
+      <h2 id="about-us-section">Meet the CrateZy Team</h2>
+      <p>Our passionate team is dedicated to bringing you the best crate experience possible.</p>
+      <div class="row">
+        <div class="col-sm-3 mb-3 mt-4 mb-sm-0" *ngFor="let pupil of pupils">
+          <div class="card">
+            <img src="{{ pupil.image }}" class="card-img-top" alt="{{ pupil.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ pupil.name }}</h5>
+              <p class="card-text">{{ pupil.description }}</p> 
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+  <section class="values mt-4">
+      <h2>Our Core Values</h2>
+      <ul >
+        <li>Customer delight: Your satisfaction is our top priority.</li>
+        <li>Quality curation: We handpick the best products for every crate.</li>
+        <li>Innovation: We're constantly searching for new and exciting discoveries.</li>
+        <li>Sustainability: We strive for eco-friendly practices whenever possible.</li>
+        </ul>
+  </section>
+
+<div class="container mt-4" id="product-section">
+    <div class="row">
+      <h3 class="products-heading mb-4">Products Offered</h3>
+      <div class="col-md-4" *ngFor="let product of products">
+        <div class="card">
+          <img src="{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text">${{ product.price }}</p>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</main>
+  

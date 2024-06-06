@@ -1,0 +1,78 @@
+.container {
+    padding-top: 2rem;
+  }
+  
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #555;
+    text-align: justify;
+  }
+
+  .btn{
+    color: blueviolet;
+  }
+  body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.products-heading{
+  color: #558;
+  font-style: oblique;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* About Us section styles */
+.about-us-image {
+    text-align: center;
+}
+
+.about-us-image img {
+    width: 100%; /* Adjust image width as needed */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.about-us-text {
+    padding: 2rem;
+     /* Add padding for spacing */
+}
+
+.about-us-text h1 {
+    font-size: 2rem; /* Adjust heading size as needed */
+    margin-bottom: 1rem; /* Add some space after heading */
+    color: #555;
+}
+
+.about-us-text p {
+    line-height: 1.5;
+    text-align: justify;/* Improve readability */
+
+}
+
+.team h2{
+    color: #557;
+}
+.value ul{
+  padding-bottom: 2px;
+  line-height: 2;
+}
